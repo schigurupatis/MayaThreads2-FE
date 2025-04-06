@@ -25,7 +25,7 @@ const PromotionalThree = () => {
                   Collection
                 </h2>
                 <Link
-                  to='/shop'
+                  to='#'
                   className='btn btn-outline-white d-inline-flex align-items-center rounded-pill gap-8 mt-48'
                   tabIndex={0}
                 >
@@ -52,7 +52,7 @@ const PromotionalThree = () => {
                   Sale 35% Off
                 </h2>
                 <Link
-                  to='/shop'
+                  to='#'
                   className='btn btn-outline-white d-inline-flex align-items-center rounded-pill gap-8 mt-48'
                   tabIndex={0}
                 >

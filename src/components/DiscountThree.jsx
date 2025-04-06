@@ -22,7 +22,7 @@ const DiscountThree = () => {
                   Spring Collection
                 </h6>
                 <Link
-                  to='/shop'
+                  to='#'
                   className='btn btn-black rounded-pill gap-8 mt-32 flex-align d-inline-flex'
                   tabIndex={0}
                 >
@@ -50,7 +50,7 @@ const DiscountThree = () => {
                   Spring Collection
                 </h6>
                 <Link
-                  to='/shop'
+                  to='#'
                   className='btn btn-black rounded-pill gap-8 mt-32 flex-align d-inline-flex'
                   tabIndex={0}
                 >
@@ -76,7 +76,7 @@ const DiscountThree = () => {
                 </span>
                 <h6 className='fw-semibold mb-0 max-w-375'>Black Friday</h6>
                 <Link
-                  to='/shop'
+                  to='#'
                   className='btn btn-black rounded-pill gap-8 mt-32 flex-align d-inline-flex'
                   tabIndex={0}
                 >
