@@ -30,8 +30,8 @@ function App() {
         <Route exact path='/index-two' element={<HomePageTwo />} />
         <Route exact path='/index-three' element={<HomePageThree />} /> */}
         <Route exact path='/' element={<HomePageThree />} />
-        <Route exact path='/shop' element={<HomePageThree />} />
-        {/* <Route exact path='/shop' element={<ShopPage />} /> */}
+        {/* <Route exact path='/shop' element={<HomePageThree />} /> */}
+        <Route exact path='/shop' element={<ShopPage />} />
         <Route
           exact
           path='/product-details'
