@@ -203,7 +203,7 @@ const HeaderThree = () => {
                   <li className='common-dropdown__item nav-submenu__item'>
                     <Link
                       onClick={() => setActiveIndex(null)}
-                      to='/shop'
+                      to='#'
                       className='common-dropdown__link nav-submenu__link hover-bg-neutral-100'
                     >
                       {" "}
@@ -723,19 +723,19 @@ const HeaderThree = () => {
       </h6>
       <ul className='submenus-submenu__list max-h-300 overflow-y-auto scroll-sm'>
         <li>
-          <Link to='/shop'>Ethnic Wear</Link>
+          <Link to='#'>Ethnic Wear</Link>
         </li>
         <li>
-          <Link to='/shop'>Western Wear</Link>
+          <Link to='#'>Western Wear</Link>
         </li>
         <li>
-          <Link to='/shop'>Accessories</Link>
+          <Link to='#'>Accessories</Link>
         </li>
         <li>
-          <Link to='/shop'>Footwear</Link>
+          <Link to='#'>Footwear</Link>
         </li>
         <li>
-          <Link to='/shop'>Seasonal Wear</Link>
+          <Link to='#'>Seasonal Wear</Link>
         </li>
       </ul>
     </div>
@@ -769,22 +769,22 @@ const HeaderThree = () => {
       </h6>
       <ul className='submenus-submenu__list max-h-300 overflow-y-auto scroll-sm'>
         <li>
-          <Link to='/shop'>Jeans</Link>
+          <Link to='#'>Jeans</Link>
         </li>
         <li>
-          <Link to='/shop'>Trousers</Link>
+          <Link to='#'>Trousers</Link>
         </li>
         <li>
-          <Link to='/shop'>Chinos</Link>
+          <Link to='#'>Chinos</Link>
         </li>
         <li>
-          <Link to='/shop'>Shorts</Link>
+          <Link to='#'>Shorts</Link>
         </li>
         <li>
-          <Link to='/shop'>Leggings</Link>
+          <Link to='#'>Leggings</Link>
         </li>
         <li>
-          <Link to='/shop'>Salwars</Link>
+          <Link to='#'>Salwars</Link>
         </li>
       </ul>
     </div>
@@ -818,19 +818,19 @@ const HeaderThree = () => {
       </h6>
       <ul className='submenus-submenu__list max-h-300 overflow-y-auto scroll-sm'>
         <li>
-          <Link to='/shop'>Formal Shirts</Link>
+          <Link to='#'>Formal Shirts</Link>
         </li>
         <li>
-          <Link to='/shop'>Casual Shirts</Link>
+          <Link to='#'>Casual Shirts</Link>
         </li>
         <li>
-          <Link to='/shop'>T-Shirts</Link>
+          <Link to='#'>T-Shirts</Link>
         </li>
         <li>
-          <Link to='/shop'>Kurtas</Link>
+          <Link to='#'>Kurtas</Link>
         </li>
         <li>
-          <Link to='/shop'>Blouses</Link>
+          <Link to='#'>Blouses</Link>
         </li>
       </ul>
     </div>
@@ -864,16 +864,16 @@ const HeaderThree = () => {
       </h6>
       <ul className='submenus-submenu__list max-h-300 overflow-y-auto scroll-sm'>
         <li>
-          <Link to='/shop'>Shirts & Pants</Link>
+          <Link to='#'>Shirts & Pants</Link>
         </li>
         <li>
-          <Link to='/shop'>Skirts & Tunics</Link>
+          <Link to='#'>Skirts & Tunics</Link>
         </li>
         <li>
-          <Link to='/shop'>Sports Uniforms</Link>
+          <Link to='#'>Sports Uniforms</Link>
         </li>
         <li>
-          <Link to='/shop'>Accessories</Link>
+          <Link to='#'>Accessories</Link>
         </li>
       </ul>
     </div>
@@ -907,19 +907,19 @@ const HeaderThree = () => {
       </h6>
       <ul className='submenus-submenu__list max-h-300 overflow-y-auto scroll-sm'>
         <li>
-          <Link to='/shop'>Silk Sarees</Link>
+          <Link to='#'>Silk Sarees</Link>
         </li>
         <li>
-          <Link to='/shop'>Cotton Sarees</Link>
+          <Link to='#'>Cotton Sarees</Link>
         </li>
         <li>
-          <Link to='/shop'>Designer Sarees</Link>
+          <Link to='#'>Designer Sarees</Link>
         </li>
         <li>
-          <Link to='/shop'>Chiffon Sarees</Link>
+          <Link to='#'>Chiffon Sarees</Link>
         </li>
         <li>
-          <Link to='/shop'>Georgette Sarees</Link>
+          <Link to='#'>Georgette Sarees</Link>
         </li>
       </ul>
     </div>
@@ -953,19 +953,19 @@ const HeaderThree = () => {
       </h6>
       <ul className='submenus-submenu__list max-h-300 overflow-y-auto scroll-sm'>
         <li>
-          <Link to='/shop'>Anarkali Suits</Link>
+          <Link to='#'>Anarkali Suits</Link>
         </li>
         <li>
-          <Link to='/shop'>Lehengas</Link>
+          <Link to='#'>Lehengas</Link>
         </li>
         <li>
-          <Link to='/shop'>Gowns</Link>
+          <Link to='#'>Gowns</Link>
         </li>
         <li>
-          <Link to='/shop'>Kurtis</Link>
+          <Link to='#'>Kurtis</Link>
         </li>
         <li>
-          <Link to='/shop'>Maxi Dresses</Link>
+          <Link to='#'>Maxi Dresses</Link>
         </li>
       </ul>
     </div>
@@ -999,19 +999,19 @@ const HeaderThree = () => {
       </h6>
       <ul className='submenus-submenu__list max-h-300 overflow-y-auto scroll-sm'>
         <li>
-          <Link to='/shop'>Infant Wear</Link>
+          <Link to='#'>Infant Wear</Link>
         </li>
         <li>
-          <Link to='/shop'>Girls Dresses</Link>
+          <Link to='#'>Girls Dresses</Link>
         </li>
         <li>
-          <Link to='/shop'>Boys Clothing</Link>
+          <Link to='#'>Boys Clothing</Link>
         </li>
         <li>
-          <Link to='/shop'>Ethnic Kids Wear</Link>
+          <Link to='#'>Ethnic Kids Wear</Link>
         </li>
         <li>
-          <Link to='/shop'>Party Wear</Link>
+          <Link to='#'>Party Wear</Link>
         </li>
       </ul>
     </div>
@@ -1064,19 +1064,19 @@ const HeaderThree = () => {
       </h6>
       <ul className='submenus-submenu__list max-h-300 overflow-y-auto scroll-sm'>
         <li>
-          <Link to='/shop'>Ethnic Wear</Link>
+          <Link to='#'>Ethnic Wear</Link>
         </li>
         <li>
-          <Link to='/shop'>Western Wear</Link>
+          <Link to='#'>Western Wear</Link>
         </li>
         <li>
-          <Link to='/shop'>Accessories</Link>
+          <Link to='#'>Accessories</Link>
         </li>
         <li>
-          <Link to='/shop'>Footwear</Link>
+          <Link to='#'>Footwear</Link>
         </li>
         <li>
-          <Link to='/shop'>Seasonal Wear</Link>
+          <Link to='#'>Seasonal Wear</Link>
         </li>
       </ul>
     </div>
@@ -1100,22 +1100,22 @@ const HeaderThree = () => {
       </h6>
       <ul className='submenus-submenu__list max-h-300 overflow-y-auto scroll-sm'>
         <li>
-          <Link to='/shop'>Jeans</Link>
+          <Link to='#'>Jeans</Link>
         </li>
         <li>
-          <Link to='/shop'>Trousers</Link>
+          <Link to='#'>Trousers</Link>
         </li>
         <li>
-          <Link to='/shop'>Chinos</Link>
+          <Link to='#'>Chinos</Link>
         </li>
         <li>
-          <Link to='/shop'>Shorts</Link>
+          <Link to='#'>Shorts</Link>
         </li>
         <li>
-          <Link to='/shop'>Leggings</Link>
+          <Link to='#'>Leggings</Link>
         </li>
         <li>
-          <Link to='/shop'>Salwars</Link>
+          <Link to='#'>Salwars</Link>
         </li>
       </ul>
     </div>
@@ -1139,19 +1139,19 @@ const HeaderThree = () => {
       </h6>
       <ul className='submenus-submenu__list max-h-300 overflow-y-auto scroll-sm'>
         <li>
-          <Link to='/shop'>Formal Shirts</Link>
+          <Link to='#'>Formal Shirts</Link>
         </li>
         <li>
-          <Link to='/shop'>Casual Shirts</Link>
+          <Link to='#'>Casual Shirts</Link>
         </li>
         <li>
-          <Link to='/shop'>T-Shirts</Link>
+          <Link to='#'>T-Shirts</Link>
         </li>
         <li>
-          <Link to='/shop'>Kurtas</Link>
+          <Link to='#'>Kurtas</Link>
         </li>
         <li>
-          <Link to='/shop'>Blouses</Link>
+          <Link to='#'>Blouses</Link>
         </li>
       </ul>
     </div>
@@ -1175,16 +1175,16 @@ const HeaderThree = () => {
       </h6>
       <ul className='submenus-submenu__list max-h-300 overflow-y-auto scroll-sm'>
         <li>
-          <Link to='/shop'>Shirts & Pants</Link>
+          <Link to='#'>Shirts & Pants</Link>
         </li>
         <li>
-          <Link to='/shop'>Skirts & Tunics</Link>
+          <Link to='#'>Skirts & Tunics</Link>
         </li>
         <li>
-          <Link to='/shop'>Sports Uniforms</Link>
+          <Link to='#'>Sports Uniforms</Link>
         </li>
         <li>
-          <Link to='/shop'>Accessories</Link>
+          <Link to='#'>Accessories</Link>
         </li>
       </ul>
     </div>
@@ -1208,19 +1208,19 @@ const HeaderThree = () => {
       </h6>
       <ul className='submenus-submenu__list max-h-300 overflow-y-auto scroll-sm'>
         <li>
-          <Link to='/shop'>Silk Sarees</Link>
+          <Link to='#'>Silk Sarees</Link>
         </li>
         <li>
-          <Link to='/shop'>Cotton Sarees</Link>
+          <Link to='#'>Cotton Sarees</Link>
         </li>
         <li>
-          <Link to='/shop'>Designer Sarees</Link>
+          <Link to='#'>Designer Sarees</Link>
         </li>
         <li>
-          <Link to='/shop'>Chiffon Sarees</Link>
+          <Link to='#'>Chiffon Sarees</Link>
         </li>
         <li>
-          <Link to='/shop'>Georgette Sarees</Link>
+          <Link to='#'>Georgette Sarees</Link>
         </li>
       </ul>
     </div>
@@ -1244,19 +1244,19 @@ const HeaderThree = () => {
       </h6>
       <ul className='submenus-submenu__list max-h-300 overflow-y-auto scroll-sm'>
         <li>
-          <Link to='/shop'>Anarkali Suits</Link>
+          <Link to='#'>Anarkali Suits</Link>
         </li>
         <li>
-          <Link to='/shop'>Lehengas</Link>
+          <Link to='#'>Lehengas</Link>
         </li>
         <li>
-          <Link to='/shop'>Gowns</Link>
+          <Link to='#'>Gowns</Link>
         </li>
         <li>
-          <Link to='/shop'>Kurtis</Link>
+          <Link to='#'>Kurtis</Link>
         </li>
         <li>
-          <Link to='/shop'>Maxi Dresses</Link>
+          <Link to='#'>Maxi Dresses</Link>
         </li>
       </ul>
     </div>
@@ -1280,19 +1280,19 @@ const HeaderThree = () => {
       </h6>
       <ul className='submenus-submenu__list max-h-300 overflow-y-auto scroll-sm'>
         <li>
-          <Link to='/shop'>Infant Wear</Link>
+          <Link to='#'>Infant Wear</Link>
         </li>
         <li>
-          <Link to='/shop'>Girls Dresses</Link>
+          <Link to='#'>Girls Dresses</Link>
         </li>
         <li>
-          <Link to='/shop'>Boys Clothing</Link>
+          <Link to='#'>Boys Clothing</Link>
         </li>
         <li>
-          <Link to='/shop'>Ethnic Kids Wear</Link>
+          <Link to='#'>Ethnic Kids Wear</Link>
         </li>
         <li>
-          <Link to='/shop'>Party Wear</Link>
+          <Link to='#'>Party Wear</Link>
         </li>
       </ul>
     </div>
@@ -1379,7 +1379,7 @@ const HeaderThree = () => {
                     <ul className='on-hover-dropdown common-dropdown nav-submenu scroll-sm'>
                       <li className='common-dropdown__item nav-submenu__item'>
                         <NavLink
-                          to='/shop'
+                          to='#'
                           className={(navData) =>
                             navData.isActive
                               ? "common-dropdown__link nav-submenu__link hover-bg-neutral-100 activePage"
