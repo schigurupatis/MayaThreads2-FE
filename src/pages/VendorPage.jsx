@@ -3,11 +3,13 @@ import ColorInit from "../helper/ColorInit";
 import ScrollToTop from "react-scroll-to-top";
 import Preloader from "../helper/Preloader";
 import HeaderOne from "../components/HeaderOne";
+import HeaderThree from "../components/HeaderThree";
 import BreadcrumbThree from "../components/BreadcrumbThree";
 import VendorsList from "../components/VendorsList";
 import ShippingOne from "../components/ShippingOne";
 import NewsletterOne from "../components/NewsletterOne";
 import FooterOne from "../components/FooterOne";
+import FooterThree from "../components/FooterThree";
 import BottomFooter from "../components/BottomFooter";
 
 const VendorPage = () => {
@@ -17,31 +19,31 @@ const VendorPage = () => {
       <Preloader />
 
       {/* ColorInit */}
-      <ColorInit color={false} />
+      <ColorInit color={true} />
 
       {/* ScrollToTop */}
-      <ScrollToTop smooth color='#299E60' />
+      <ScrollToTop smooth color='#FA6400' />
 
       {/* HeaderOne */}
-      <HeaderOne />
+      <HeaderThree/>
 
       {/* BreadcrumbThree */}
-      <BreadcrumbThree title={"Vendor List"} />
+      <BreadcrumbThree title={"Tailers List"} />
 
       {/* VendorsList */}
       <VendorsList />
 
       {/* ShippingOne */}
-      <ShippingOne />
+      {/* <ShippingOne /> */}
 
       {/* NewsletterOne */}
-      <NewsletterOne />
+      {/* <NewsletterOne /> */}
 
       {/* FooterOne */}
-      <FooterOne />
+      <FooterThree />
 
       {/* BottomFooter */}
-      <BottomFooter />
+      {/* <BottomFooter /> */}
     </>
   );
 };

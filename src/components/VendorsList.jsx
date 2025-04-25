@@ -17,7 +17,7 @@ const VendorsList = () => {
               <input
                 type='text'
                 className='search-form__input common-input py-13 ps-16 pe-18 rounded-pill pe-44'
-                placeholder='Search vendors by name or ID...'
+                placeholder='Search tailers by name or ID...'
               />
               <button
                 type='submit'
