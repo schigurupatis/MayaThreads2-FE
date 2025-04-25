@@ -409,7 +409,7 @@ const HeaderThree = () => {
                         to='#'
                         className='text-white text-sm hover-text-decoration-underline'
                       >
-                        Become A Seller
+                        Become A Tailer
                       </Link>
                     </li>
                     <li className='border-right-item'>
@@ -470,7 +470,7 @@ const HeaderThree = () => {
                    
                     <li className='border-right-item'>
                       <Link
-                        to='#'
+                        to='/account'
                         className='text-white text-sm py-8 flex-align gap-6'
                       >
                         <span className='icon text-md d-flex'>
@@ -590,7 +590,7 @@ const HeaderThree = () => {
                   </span>
                 </button>
                 <Link
-                  to='#'
+                  to='/account'
                   className='flex-align flex-column gap-8 item-hover-two'
                 >
                   <span className='text-2xl text-white d-flex position-relative item-hover__text'>
@@ -600,7 +600,7 @@ const HeaderThree = () => {
                     Profile
                   </span>
                 </Link>
-                <Link
+                {/* <Link
                   to='#'
                   className='flex-align flex-column gap-8 item-hover-two'
                 >
@@ -613,7 +613,7 @@ const HeaderThree = () => {
                   <span className='text-md text-white item-hover__text d-none d-lg-flex'>
                     Wishlist
                   </span>
-                </Link>
+                </Link> */}
                 {/* <Link
                   to='/cart'
                   className='flex-align flex-column gap-8 item-hover-two'
@@ -1316,12 +1316,12 @@ const HeaderThree = () => {
                     </NavLink>
                   </li>
                   <li className='nav-menu__item'>
-                    <NavLink to='#' className='nav-menu__link'>
+                    <NavLink to='/shop' className='nav-menu__link'>
                       Shops
                     </NavLink>
                   </li>
                   <li className='nav-menu__item'>
-                    <NavLink to='#' className='nav-menu__link'>
+                    <NavLink to='/services' className='nav-menu__link'>
                       Services
                     </NavLink>
                   </li>
@@ -1580,7 +1580,7 @@ const HeaderThree = () => {
                     </ul>
                   </li> */}
                   <li className='nav-menu__item'>
-                    <NavLink to='#' className='nav-menu__link'>
+                    <NavLink to='/contact' className='nav-menu__link'>
                       Contact Us
                     </NavLink>
                   </li>
@@ -1611,7 +1611,8 @@ const HeaderThree = () => {
                                   <i className='ph ph-magnifying-glass' />
                                 </span>
                               </button>
-                              <Link to='/wishlist' className='flex-align gap-4 item-hover'>
+                              
+                              {/* <Link to='/wishlist' className='flex-align gap-4 item-hover'>
                                 <span className='text-2xl text-gray-700 d-flex position-relative me-6 mt-6 item-hover__text'>
                                   <i className='ph ph-heart' />
                                   <span className='w-16 h-16 flex-center rounded-circle bg-main-600 text-white text-xs position-absolute top-n6 end-n4'>
@@ -1632,7 +1633,7 @@ const HeaderThree = () => {
                                 <span className='text-md text-gray-500 item-hover__text d-none d-lg-flex'>
                                   Cart
                                 </span>
-                              </Link>
+                              </Link> */}
                             </div>
                           </div>
                           <button

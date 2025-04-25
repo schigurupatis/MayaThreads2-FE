@@ -20,7 +20,7 @@ const ShopSection = () => {
             <div className="container container-lg">
                 <div className="row">
                     {/* Sidebar Start */}
-                    <div className="col-lg-3">
+                    <div className="col-lg-3 d-none">
                         <div className={`shop-sidebar ${active && "active"}`}>
                             <button onClick={sidebarController}
                                 type="button"
@@ -613,7 +613,7 @@ const ShopSection = () => {
                     </div>
                     {/* Sidebar End */}
                     {/* Content Start */}
-                    <div className="col-lg-9">
+                    <div className="col-lg-12">
                         {/* Top Start */}
                         <div className="flex-between gap-16 flex-wrap mb-40 ">
                             <span className="text-gray-900">Showing 1-20 of 85 result</span>

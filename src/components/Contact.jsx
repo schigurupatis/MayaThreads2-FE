@@ -121,10 +121,10 @@ const Contact = () => {
                                     <i className="ph-fill ph-envelope" />
                                 </span>
                                 <Link
-                                    to="/mailto:support24@marketpro.com"
+                                    to="/mailto:mayathreads1@gmail.com"
                                     className="text-md text-gray-900 hover-text-main-600"
                                 >
-                                    support24@marketpro.com
+                                    mayathreads1@gmail.com
                                 </Link>
                             </div>
                             <div className="flex-align gap-16 mb-0">
@@ -132,7 +132,7 @@ const Contact = () => {
                                     <i className="ph-fill ph-map-pin" />
                                 </span>
                                 <span className="text-md text-gray-900 ">
-                                    789 Inner Lane, California, USA
+                                    789 Inner Lane, Brescia, Italy
                                 </span>
                             </div>
                         </div>

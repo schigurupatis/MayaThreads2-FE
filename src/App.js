@@ -19,7 +19,8 @@ import VendorTwoPage from "./pages/VendorTwoPage";
 import VendorTwoDetailsPage from "./pages/VendorTwoDetailsPage";
 import BecomeSellerPage from "./pages/BecomeSellerPage";
 import WishlistPage from "./pages/WishlistPage";
-import TailersPage from "./pages/Tailers";
+import TailersPage from "./pages/TailersPage";
+import ServicesPage from "./pages/ServicesPage";
 function App() {
   return (
     <BrowserRouter>
@@ -53,6 +54,7 @@ function App() {
         <Route exact path='/contact' element={<ContactPage />} />
         <Route exact path='/vendor' element={<VendorPage />} />
         <Route exact path='/tailers' element={<TailersPage />} />
+        <Route exact path='/services' element={<ServicesPage />} />
         <Route exact path='/vendor-details' element={<VendorDetailsPage />} />
         <Route exact path='/vendor-two' element={<VendorTwoPage />} />
         <Route

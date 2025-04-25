@@ -7,6 +7,8 @@ import ShippingTwo from "../components/ShippingTwo";
 import FooterTwo from "../components/FooterTwo";
 import ColorInit from "../helper/ColorInit";
 import ScrollToTop from "react-scroll-to-top";
+import HeaderThree from "../components/HeaderThree";
+import FooterThree from "../components/FooterThree";
 
 const ShopPage = () => {
 
@@ -22,19 +24,21 @@ const ShopPage = () => {
       <Preloader />
 
       {/* HeaderOne */}
-      <HeaderTwo category={true} />
+      {/* <HeaderTwo category={true} /> */}
+      <HeaderThree />
 
       {/* Breadcrumb */}
-      <Breadcrumb title={"Shop"} />
+      <Breadcrumb title={"Tailer Shops"} />
 
       {/* ShopSection */}
       <ShopSection />
 
       {/* ShippingTwo */}
-      <ShippingTwo />
+      {/* <ShippingTwo /> */}
 
       {/* FooterTwo */}
-      <FooterTwo />
+      {/* <FooterTwo /> */}
+      <FooterThree />
 
 
     </>
