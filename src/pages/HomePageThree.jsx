@@ -50,7 +50,7 @@ const HomePageThree = () => {
       {/* <TrendingThree /> */}
 
       {/* DiscountThree */}
-      <DiscountThree />
+      {/* <DiscountThree /> */}
 
       {/* NewArrivalThree */}
       {/* <NewArrivalThree /> */}

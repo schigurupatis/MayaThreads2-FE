@@ -98,7 +98,7 @@ const FeatureThree = () => {
                 <div className='feature-item__thumb bg-yellow-light max-w-260 max-h-260 rounded-circle w-100 h-100'>
                   <Link to='#' className='w-100 h-100 flex-center'>
                     <img
-                      src='assets/images/thumbs/features-three-img1.png'
+                      src='assets/images/thumbs/mensfashion3.png'
                       alt=''
                     />
                   </Link>
@@ -152,7 +152,7 @@ const FeatureThree = () => {
                 <div className='feature-item__thumb bg-danger-light max-w-260 max-h-260 rounded-circle w-100 h-100'>
                   <Link to='#' className='w-100 h-100 flex-center'>
                     <img
-                      src='assets/images/thumbs/features-three-img4.png'
+                      src='assets/images/thumbs/schooluniform2.png'
                       alt=''
                     />
                   </Link>
@@ -160,7 +160,7 @@ const FeatureThree = () => {
                 <div className='feature-item__content mt-20'>
                   <h6 className='text-lg mb-8'>
                     <Link to='#' className='text-inherit'>
-                      Fashion Glass
+                      School Uniforms
                     </Link>
                   </h6>
                   <span className='text-sm text-gray-900'>68 Items</span>
@@ -170,7 +170,7 @@ const FeatureThree = () => {
                 <div className='feature-item__thumb bg-warning-light max-w-260 max-h-260 rounded-circle w-100 h-100'>
                   <Link to='#' className='w-100 h-100 flex-center'>
                     <img
-                      src='assets/images/thumbs/features-three-img5.png'
+                      src='assets/images/thumbs/latestblazor.png' className="w-50 h-50"
                       alt=''
                     />
                   </Link>
@@ -178,7 +178,7 @@ const FeatureThree = () => {
                 <div className='feature-item__content mt-20'>
                   <h6 className='text-lg mb-8'>
                     <Link to='#' className='text-inherit'>
-                      Shoes Collection
+                      Latest Blazor Designs
                     </Link>
                   </h6>
                   <span className='text-sm text-gray-900'>190 Items</span>
@@ -188,7 +188,7 @@ const FeatureThree = () => {
                 <div className='feature-item__thumb bg-success-light max-w-260 max-h-260 rounded-circle w-100 h-100'>
                   <Link to='#' className='w-100 h-100 flex-center'>
                     <img
-                      src='assets/images/thumbs/features-three-img6.png'
+                      src='assets/images/thumbs/weddingspl.png' className="w-50 h-50"
                       alt=''
                     />
                   </Link>
@@ -196,7 +196,7 @@ const FeatureThree = () => {
                 <div className='feature-item__content mt-20'>
                   <h6 className='text-lg mb-8'>
                     <Link to='#' className='text-inherit'>
-                      Bag Collection
+                      Wedding Specials
                     </Link>
                   </h6>
                   <span className='text-sm text-gray-900'>128 Items</span>
@@ -206,7 +206,7 @@ const FeatureThree = () => {
                 <div className='feature-item__thumb max-w-260 max-h-260 rounded-circle w-100 h-100'>
                   <Link to='#' className='w-100 h-100 flex-center'>
                     <img
-                      src='assets/images/thumbs/features-three-img3.png'
+                      src='assets/images/thumbs/trendingfashion.png'
                       alt=''
                     />
                   </Link>
@@ -214,7 +214,7 @@ const FeatureThree = () => {
                 <div className='feature-item__content mt-20'>
                   <h6 className='text-lg mb-8'>
                     <Link to='#' className='text-inherit'>
-                      Men's Fashion
+                      Trending's Fashion
                     </Link>
                   </h6>
                   <span className='text-sm text-gray-900'>180 Items</span>
