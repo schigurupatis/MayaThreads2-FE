@@ -64,7 +64,7 @@ const VendorTwo = () => {
         </div>
         {/* Top Search End */}
         <div className='row'>
-          <div className='col-xl-3 col-lg-4'>
+          <div className='col-xl-3 col-lg-4 d-none'>
             <div className={`shop-sidebar ${active && "active"}`}>
               <button
                 onClick={sidebarController}
@@ -472,7 +472,7 @@ const VendorTwo = () => {
               </div>
             </div>
           </div>
-          <div className='col-xl-9 col-lg-8'>
+          <div className='col-xl-12 col-lg-12'>
             {/* Vendors Start */}
             <div
               className={`list-grid-wrapper vendors-two-item-wrapper grid-cols-3 ${
@@ -505,7 +505,7 @@ const VendorTwo = () => {
                     </div>
                     <div className='mt-16'>
                       <h6 className='text-white fw-semibold mb-12'>
-                        <Link to='/vendor-two-details' className=''>
+                        <Link to='/' className=''>
                           e-Mart Shop
                         </Link>
                       </h6>
@@ -571,10 +571,10 @@ const VendorTwo = () => {
                     </div>
                   </div>
                   <Link
-                    to='/vendor-two-details'
+                    to='/'
                     className='btn bg-neutral-600 hover-bg-neutral-700 text-white py-12 px-24 rounded-8 flex-center gap-8 fw-medium mt-24'
                   >
-                    Visit Store
+                    Visit Shop
                     <span className='text-xl d-flex text-main-two-600'>
                       {" "}
                       <i className='ph ph-storefront' />
@@ -608,7 +608,7 @@ const VendorTwo = () => {
                     </div>
                     <div className='mt-16'>
                       <h6 className='text-white fw-semibold mb-12'>
-                        <Link to='/vendor-two-details' className=''>
+                        <Link to='/' className=''>
                           Baishakhi
                         </Link>
                       </h6>
@@ -674,10 +674,10 @@ const VendorTwo = () => {
                     </div>
                   </div>
                   <Link
-                    to='/vendor-two-details'
+                    to='/'
                     className='btn bg-neutral-600 hover-bg-neutral-700 text-white py-12 px-24 rounded-8 flex-center gap-8 fw-medium mt-24'
                   >
-                    Visit Store
+                    Visit Shop
                     <span className='text-xl d-flex text-main-two-600'>
                       {" "}
                       <i className='ph ph-storefront' />
@@ -711,7 +711,7 @@ const VendorTwo = () => {
                     </div>
                     <div className='mt-16'>
                       <h6 className='text-white fw-semibold mb-12'>
-                        <Link to='/vendor-two-details' className=''>
+                        <Link to='/' className=''>
                           e-zone Shop
                         </Link>
                       </h6>
@@ -777,10 +777,10 @@ const VendorTwo = () => {
                     </div>
                   </div>
                   <Link
-                    to='/vendor-two-details'
+                    to='/'
                     className='btn bg-neutral-600 hover-bg-neutral-700 text-white py-12 px-24 rounded-8 flex-center gap-8 fw-medium mt-24'
                   >
-                    Visit Store
+                    Visit Shop
                     <span className='text-xl d-flex text-main-two-600'>
                       {" "}
                       <i className='ph ph-storefront' />
@@ -814,7 +814,7 @@ const VendorTwo = () => {
                     </div>
                     <div className='mt-16'>
                       <h6 className='text-white fw-semibold mb-12'>
-                        <Link to='/vendor-two-details' className=''>
+                        <Link to='/' className=''>
                           Cloth &amp; Fashion Shop
                         </Link>
                       </h6>
@@ -880,10 +880,10 @@ const VendorTwo = () => {
                     </div>
                   </div>
                   <Link
-                    to='/vendor-two-details'
+                    to='/'
                     className='btn bg-neutral-600 hover-bg-neutral-700 text-white py-12 px-24 rounded-8 flex-center gap-8 fw-medium mt-24'
                   >
-                    Visit Store
+                    Visit Shop
                     <span className='text-xl d-flex text-main-two-600'>
                       {" "}
                       <i className='ph ph-storefront' />
@@ -917,7 +917,7 @@ const VendorTwo = () => {
                     </div>
                     <div className='mt-16'>
                       <h6 className='text-white fw-semibold mb-12'>
-                        <Link to='/vendor-two-details' className=''>
+                        <Link to='/' className=''>
                           New Market Shop
                         </Link>
                       </h6>
@@ -983,10 +983,10 @@ const VendorTwo = () => {
                     </div>
                   </div>
                   <Link
-                    to='/vendor-two-details'
+                    to='/'
                     className='btn bg-neutral-600 hover-bg-neutral-700 text-white py-12 px-24 rounded-8 flex-center gap-8 fw-medium mt-24'
                   >
-                    Visit Store
+                    Visit Shop
                     <span className='text-xl d-flex text-main-two-600'>
                       {" "}
                       <i className='ph ph-storefront' />
@@ -1020,7 +1020,7 @@ const VendorTwo = () => {
                     </div>
                     <div className='mt-16'>
                       <h6 className='text-white fw-semibold mb-12'>
-                        <Link to='/vendor-two-details' className=''>
+                        <Link to='/' className=''>
                           Zeilla Shop
                         </Link>
                       </h6>
@@ -1086,10 +1086,10 @@ const VendorTwo = () => {
                     </div>
                   </div>
                   <Link
-                    to='/vendor-two-details'
+                    to='/'
                     className='btn bg-neutral-600 hover-bg-neutral-700 text-white py-12 px-24 rounded-8 flex-center gap-8 fw-medium mt-24'
                   >
-                    Visit Store
+                    Visit Shop
                     <span className='text-xl d-flex text-main-two-600'>
                       {" "}
                       <i className='ph ph-storefront' />
@@ -1123,7 +1123,7 @@ const VendorTwo = () => {
                     </div>
                     <div className='mt-16'>
                       <h6 className='text-white fw-semibold mb-12'>
-                        <Link to='/vendor-two-details' className=''>
+                        <Link to='/' className=''>
                           Ever Green Shop
                         </Link>
                       </h6>
@@ -1189,10 +1189,10 @@ const VendorTwo = () => {
                     </div>
                   </div>
                   <Link
-                    to='/vendor-two-details'
+                    to='/'
                     className='btn bg-neutral-600 hover-bg-neutral-700 text-white py-12 px-24 rounded-8 flex-center gap-8 fw-medium mt-24'
                   >
-                    Visit Store
+                    Visit Shop
                     <span className='text-xl d-flex text-main-two-600'>
                       {" "}
                       <i className='ph ph-storefront' />
@@ -1226,7 +1226,7 @@ const VendorTwo = () => {
                     </div>
                     <div className='mt-16'>
                       <h6 className='text-white fw-semibold mb-12'>
-                        <Link to='/vendor-two-details' className=''>
+                        <Link to='/' className=''>
                           Maple Shop
                         </Link>
                       </h6>
@@ -1292,10 +1292,10 @@ const VendorTwo = () => {
                     </div>
                   </div>
                   <Link
-                    to='/vendor-two-details'
+                    to='/'
                     className='btn bg-neutral-600 hover-bg-neutral-700 text-white py-12 px-24 rounded-8 flex-center gap-8 fw-medium mt-24'
                   >
-                    Visit Store
+                    Visit Shop
                     <span className='text-xl d-flex text-main-two-600'>
                       {" "}
                       <i className='ph ph-storefront' />
@@ -1329,7 +1329,7 @@ const VendorTwo = () => {
                     </div>
                     <div className='mt-16'>
                       <h6 className='text-white fw-semibold mb-12'>
-                        <Link to='/vendor-two-details' className=''>
+                        <Link to='/' className=''>
                           New Mart
                         </Link>
                       </h6>
@@ -1395,10 +1395,10 @@ const VendorTwo = () => {
                     </div>
                   </div>
                   <Link
-                    to='/vendor-two-details'
+                    to='/'
                     className='btn bg-neutral-600 hover-bg-neutral-700 text-white py-12 px-24 rounded-8 flex-center gap-8 fw-medium mt-24'
                   >
-                    Visit Store
+                    Visit Shop
                     <span className='text-xl d-flex text-main-two-600'>
                       {" "}
                       <i className='ph ph-storefront' />

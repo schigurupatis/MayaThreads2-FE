@@ -11,6 +11,7 @@ import NewsletterOne from "../components/NewsletterOne";
 import FooterOne from "../components/FooterOne";
 import FooterThree from "../components/FooterThree";
 import BottomFooter from "../components/BottomFooter";
+import VendorTwo from "../components/VendorTwo";
 
 const ShopsPage = () => {
   return (
@@ -31,7 +32,8 @@ const ShopsPage = () => {
       <BreadcrumbThree title={"Shops List"} />
 
       {/* VendorsList */}
-      <VendorsList />
+      {/* <VendorsList /> */}
+      <VendorTwo />
 
       {/* ShippingOne */}
       {/* <ShippingOne /> */}
