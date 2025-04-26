@@ -16,13 +16,13 @@ const Account = () => {
                                         htmlFor="username"
                                         className="text-neutral-900 text-lg mb-8 fw-medium"
                                     >
-                                        Username or email address <span className="text-danger">*</span>{" "}
+                                        Phone or Email <span className="text-danger">*</span>{" "}
                                     </label>
                                     <input
                                         type="text"
                                         className="common-input"
                                         id="username"
-                                        placeholder="First Name"
+                                        placeholder="Phone or Email"
                                     />
                                 </div>
                                 <div className="mb-24">
@@ -51,7 +51,7 @@ const Account = () => {
                                         <button type="submit" className="btn btn-main py-18 px-40">
                                             Log in
                                         </button>
-                                        <div className="form-check common-check">
+                                        {/* <div className="form-check common-check">
                                             <input
                                                 className="form-check-input"
                                                 type="checkbox"
@@ -64,7 +64,7 @@ const Account = () => {
                                             >
                                                 Remember me
                                             </label>
-                                        </div>
+                                        </div> */}
                                     </div>
                                 </div>
                                 <div className="mt-48">
