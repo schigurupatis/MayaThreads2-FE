@@ -400,7 +400,7 @@ const HeaderThree = () => {
       </div>
       {/* ==================== Mobile Menu End Here ==================== */}
       {/* ======================= Middle Top Start ========================= */}
-            <div className='header-top bg-main-600 flex-between'>
+            <div className='header-top bg-main-600 flex-between d-none'>
               <div className='container container-lg'>
                 <div className='flex-between flex-wrap gap-8'>
                   <ul className='flex-align flex-wrap d-none d-md-flex'>
@@ -597,7 +597,8 @@ const HeaderThree = () => {
                     <i className='ph ph-user' />
                   </span>
                   <span className='text-md text-white item-hover__text d-none d-lg-flex'>
-                    Profile
+                    {/* Profile */}
+                    SignIn
                   </span>
                 </Link>
                 {/* <Link
