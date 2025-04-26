@@ -133,12 +133,12 @@ const HeaderThree = () => {
                     </NavLink>
                   </li>
                   <li className='nav-menu__item'>
-                    <NavLink to='#' className='nav-menu__link'>
+                    <NavLink to='/shops' className='nav-menu__link'>
                       Shops
                     </NavLink>
                   </li>
                   <li className='nav-menu__item'>
-                    <NavLink to='#' className='nav-menu__link'>
+                    <NavLink to='/services' className='nav-menu__link'>
                       Services
                     </NavLink>
                   </li>
@@ -1316,7 +1316,7 @@ const HeaderThree = () => {
                     </NavLink>
                   </li>
                   <li className='nav-menu__item'>
-                    <NavLink to='/shop' className='nav-menu__link'>
+                    <NavLink to='/shops' className='nav-menu__link'>
                       Shops
                     </NavLink>
                   </li>

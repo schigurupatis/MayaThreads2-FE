@@ -21,6 +21,7 @@ import BecomeSellerPage from "./pages/BecomeSellerPage";
 import WishlistPage from "./pages/WishlistPage";
 import TailersPage from "./pages/TailersPage";
 import ServicesPage from "./pages/ServicesPage";
+import ShopsPage from "./pages/ShopsPage";
 function App() {
   return (
     <BrowserRouter>
@@ -34,6 +35,7 @@ function App() {
         <Route exact path='/' element={<HomePageThree />} />
         {/* <Route exact path='/shop' element={<HomePageThree />} /> */}
         <Route exact path='/shop' element={<ShopPage />} />
+        <Route exact path='/shops' element={<ShopsPage />} />
         <Route
           exact
           path='/product-details'
