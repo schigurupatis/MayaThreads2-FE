@@ -13,7 +13,7 @@ const ShippingThree = () => {
               <div className=''>
                 <h6 className='mb-0'>Free Shipping</h6>
                 <span className='text-sm text-heading'>
-                  Free shipping all over the US
+                  Free shipping all over the India
                 </span>
               </div>
             </div>
@@ -26,7 +26,7 @@ const ShippingThree = () => {
               <div className=''>
                 <h6 className='mb-0'> 100% Satisfaction</h6>
                 <span className='text-sm text-heading'>
-                  Free shipping all over the US
+                  Free shipping all over the India
                 </span>
               </div>
             </div>
@@ -39,7 +39,7 @@ const ShippingThree = () => {
               <div className=''>
                 <h6 className='mb-0'> Secure Payments</h6>
                 <span className='text-sm text-heading'>
-                  Free shipping all over the US
+                  Free shipping all over the India
                 </span>
               </div>
             </div>
@@ -52,7 +52,7 @@ const ShippingThree = () => {
               <div className=''>
                 <h6 className='mb-0'> 24/7 Support</h6>
                 <span className='text-sm text-heading'>
-                  Free shipping all over the US
+                  Free shipping all over the India
                 </span>
               </div>
             </div>

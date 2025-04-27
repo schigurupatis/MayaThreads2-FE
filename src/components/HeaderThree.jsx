@@ -506,7 +506,7 @@ const HeaderThree = () => {
                 action='#'
                 className='flex-align flex-wrap form-location-wrapper'
               >
-                <div className='search-category style-two d-flex h-48 search-form d-sm-flex d-none'>
+                <div className='search-category style-two d-flex h-48 search-form d-sm-flex' style={{borderRadius: "50px"}}>
                   <select
                     className='js-example-basic-single border border-gray-200 border-end-0 rounded-0 border-0'
                     name='state'

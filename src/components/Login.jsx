@@ -53,12 +53,12 @@ const Login = () => {
                                 </div>
 
                                 <div className="mt-24 text-center">
-                                    {/* <Link
+                                    <Link
                                         to="#"
-                                        className="text-danger-600 text-sm fw-semibold hover-text-decoration-underline"
+                                        className="text-danger-600 text-sm fw-semibold hover-text-decoration-underline mb-4"
                                     >
                                         Forgot your password?
-                                    </Link> */}
+                                    </Link>
                                     <p className='m-0'>
                                         Don't have account?
                                         <Link

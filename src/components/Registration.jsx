@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 // Importing icons from Phosphor icons or you can use FontAwesome or anything else
-import { EnvelopeSimple, LockSimple, UserCircle } from '@phosphor-icons/react';
+import { EnvelopeSimple, LockSimple } from '@phosphor-icons/react';
 
 const Registration = () => {
     return (
