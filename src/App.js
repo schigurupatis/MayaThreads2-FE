@@ -36,7 +36,7 @@ function App() {
         <Route exact path='/index-three' element={<HomePageThree />} /> */}
         <Route exact path='/' element={<HomePageThree />} />
         {/* <Route exact path='/shop' element={<HomePageThree />} /> */}
-        <Route exact path='/shop' element={<ShopPage />} />
+        {/* <Route exact path='/shop' element={<ShopPage />} /> */}
         <Route exact path='/shops' element={<ShopsPage />} />
         <Route exact path='/signin' element={<SignInPage />} />
         <Route exact path='/signup' element={<SignUpPage />} />
