@@ -1,17 +1,17 @@
 import React from "react";
 import Preloader from "../helper/Preloader";
 
-import HeaderTwo from "../components/HeaderTwo";
+// import HeaderTwo from "../components/HeaderTwo";
 import Breadcrumb from "../components/Breadcrumb";
-import FooterTwo from "../components/FooterTwo";
-import BottomFooter from "../components/BottomFooter";
-import ShippingOne from "../components/ShippingOne";
-import Account from "../components/Account";
+// import FooterTwo from "../components/FooterTwo";
+// import BottomFooter from "../components/BottomFooter";
+// import ShippingOne from "../components/ShippingOne";
+// import Account from "../components/Account";
 import ScrollToTop from "react-scroll-to-top";
 import ColorInit from "../helper/ColorInit";
 import HeaderThree from "../components/HeaderThree";
 import FooterThree from "../components/FooterThree";
-import Login from "../components/Login";
+// import Login from "../components/Login";
 import Registration from "../components/Registration";
 
 
