@@ -12,8 +12,8 @@ import { useNavigate } from "react-router-dom";
 const Login = () => {
   const dispatch = useDispatch();
   const navigate = useNavigate();
-  const [loading, setLoading] = useState(false);
-  const [errorMsg, setErrorMsg] = useState("");
+//   const [loading, setLoading] = useState(false);
+//   const [errorMsg, setErrorMsg] = useState("");
 
   const [showPwd, setShowPwd] = useState(false);
   const [error, setError] = useState("");
