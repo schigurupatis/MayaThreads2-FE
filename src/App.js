@@ -24,9 +24,15 @@ import ServicesPage from "./pages/ServicesPage";
 import ShopsPage from "./pages/ShopsPage";
 import SignInPage from "./pages/SignInPage";
 import SignUpPage from "./pages/SignUpPage";
+
+import { Provider } from "react-redux"
+import appStore from "./utils/appStore"
+
+
 function App() {
   return (
-    <BrowserRouter>
+    <Provider store={appStore}>
+    <BrowserRouter basename="/">
       <RouteScrollToTop />
       <PhosphorIconInit />
 
@@ -70,6 +76,7 @@ function App() {
         />
       </Routes>
     </BrowserRouter>
+    </Provider>
   );
 }
 

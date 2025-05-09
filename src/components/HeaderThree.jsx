@@ -1,8 +1,35 @@
 import React, { useEffect, useState } from "react";
 import query from "jquery";
+import axios from "axios";
 import { Link, NavLink } from "react-router-dom";
+import { useDispatch, useSelector } from "react-redux";
+import { useNavigate } from "react-router-dom";
+import { BASE_URL } from "../utils/constants";
+import { removeUser } from "../utils/userSlice";
 
 const HeaderThree = () => {
+  const currentUser = useSelector((store) => store.user);
+  // const currentUser = useSelector((store) => store.user?.user);
+  // console.log("user from store is:", currentUser);
+
+
+  const dispatch = useDispatch();
+  const navigate = useNavigate();
+
+  const handleLogout = async () =>  {
+    try{
+      await axios.post(BASE_URL + "/logout", {},
+      {
+        withCredentials: true,
+      });
+      dispatch(removeUser());
+      //dispatch(removeFeed(feed));
+      return navigate("/");
+    }catch(err) {
+      console.log("Erros is:", err);
+    }
+  }
+
   const [scroll, setScroll] = useState(false);
   useEffect(() => {
     window.onscroll = () => {
@@ -142,252 +169,6 @@ const HeaderThree = () => {
                       Services
                     </NavLink>
                   </li>
-              {/* <li
-                onClick={() => handleMenuClick(0)}
-                className={`on-hover-item nav-menu__item has-submenu ${
-                  activeIndex === 0 ? "d-block" : ""
-                }`}
-              >
-                <Link to='#' className='nav-menu__link'>
-                  Home
-                </Link>
-                <ul
-                  className={`on-hover-dropdown common-dropdown nav-submenu scroll-sm ${
-                    activeIndex === 0 ? "open" : ""
-                  }`}
-                >
-                  <li className='common-dropdown__item nav-submenu__item'>
-                    <Link
-                      onClick={() => setActiveIndex(null)}
-                      to='/'
-                      className='common-dropdown__link nav-submenu__link hover-bg-neutral-100'
-                    >
-                      Home Grocery
-                    </Link>
-                  </li>
-                  <li className='common-dropdown__item nav-submenu__item'>
-                    <Link
-                      onClick={() => setActiveIndex(null)}
-                      to='/index-two'
-                      className='common-dropdown__link nav-submenu__link hover-bg-neutral-100'
-                    >
-                      {" "}
-                      Home Electronics
-                    </Link>
-                  </li>
-                  <li className='common-dropdown__item nav-submenu__item'>
-                    <Link
-                      onClick={() => setActiveIndex(null)}
-                      to='/index-three'
-                      className='common-dropdown__link nav-submenu__link hover-bg-neutral-100'
-                    >
-                      Home Fashion
-                    </Link>
-                  </li>
-                </ul>
-              </li>
-              <li
-                onClick={() => handleMenuClick(1)}
-                className={`on-hover-item nav-menu__item has-submenu ${
-                  activeIndex === 1 ? "d-block" : ""
-                }`}
-              >
-                <Link to='#' className='nav-menu__link'>
-                  Shop
-                </Link>
-                <ul
-                  className={`on-hover-dropdown common-dropdown nav-submenu scroll-sm ${
-                    activeIndex === 1 ? "open" : ""
-                  }`}
-                >
-                  <li className='common-dropdown__item nav-submenu__item'>
-                    <Link
-                      onClick={() => setActiveIndex(null)}
-                      to='#'
-                      className='common-dropdown__link nav-submenu__link hover-bg-neutral-100'
-                    >
-                      {" "}
-                      Shop
-                    </Link>
-                  </li>
-                  <li className='common-dropdown__item nav-submenu__item'>
-                    <Link
-                      onClick={() => setActiveIndex(null)}
-                      to='/product-details'
-                      className='common-dropdown__link nav-submenu__link hover-bg-neutral-100'
-                    >
-                      {" "}
-                      Shop Details
-                    </Link>
-                  </li>
-                  <li className='common-dropdown__item nav-submenu__item'>
-                    <Link
-                      onClick={() => setActiveIndex(null)}
-                      to='/product-details-two'
-                      className='common-dropdown__link nav-submenu__link hover-bg-neutral-100'
-                    >
-                      {" "}
-                      Shop Details Two
-                    </Link>
-                  </li>
-                </ul>
-              </li>
-              <li
-                onClick={() => handleMenuClick(2)}
-                className={`on-hover-item nav-menu__item has-submenu ${
-                  activeIndex === 2 ? "d-block" : ""
-                }`}
-              >
-                <span className='badge-notification bg-warning-600 text-white text-sm py-2 px-8 rounded-4'>
-                  New
-                </span>
-                <Link to='#' className='nav-menu__link'>
-                  Pages
-                </Link>
-                <ul
-                  className={`on-hover-dropdown common-dropdown nav-submenu scroll-sm ${
-                    activeIndex === 2 ? "open" : ""
-                  }`}
-                >
-                  <li className='common-dropdown__item nav-submenu__item'>
-                    <Link
-                      onClick={() => setActiveIndex(null)}
-                      to='/cart'
-                      className='common-dropdown__link nav-submenu__link hover-bg-neutral-100'
-                    >
-                      {" "}
-                      Cart
-                    </Link>
-                  </li>
-                  <li className='common-dropdown__item nav-submenu__item'>
-                    <Link
-                      onClick={() => setActiveIndex(null)}
-                      to='/wishlist'
-                      className='common-dropdown__link nav-submenu__link hover-bg-neutral-100'
-                    >
-                      Wishlist
-                    </Link>
-                  </li>
-                  <li className='common-dropdown__item nav-submenu__item'>
-                    <Link
-                      onClick={() => setActiveIndex(null)}
-                      to='/checkout'
-                      className='common-dropdown__link nav-submenu__link hover-bg-neutral-100'
-                    >
-                      Checkout
-                    </Link>
-                  </li>
-                  <li className='common-dropdown__item nav-submenu__item'>
-                    <Link
-                      onClick={() => setActiveIndex(null)}
-                      to='/become-seller'
-                      className='common-dropdown__link nav-submenu__link hover-bg-neutral-100'
-                    >
-                      Become Seller
-                    </Link>
-                  </li>
-                  <li className='common-dropdown__item nav-submenu__item'>
-                    <Link
-                      onClick={() => setActiveIndex(null)}
-                      to='#'
-                      className='common-dropdown__link nav-submenu__link hover-bg-neutral-100'
-                    >
-                      Account
-                    </Link>
-                  </li>
-                </ul>
-              </li>
-              <li
-                onClick={() => handleMenuClick(3)}
-                className={`on-hover-item nav-menu__item has-submenu ${
-                  activeIndex === 3 ? "d-block" : ""
-                }`}
-              >
-                <span className='badge-notification bg-tertiary-600 text-white text-sm py-2 px-8 rounded-4'>
-                  New
-                </span>
-                <Link to='#' className='nav-menu__link'>
-                  Vendors
-                </Link>
-                <ul
-                  className={`on-hover-dropdown common-dropdown nav-submenu scroll-sm ${
-                    activeIndex === 3 ? "open" : ""
-                  }`}
-                >
-                  <li className='common-dropdown__item nav-submenu__item'>
-                    <Link
-                      onClick={() => setActiveIndex(null)}
-                      to='/vendor'
-                      className='common-dropdown__link nav-submenu__link hover-bg-neutral-100'
-                    >
-                      Vendor
-                    </Link>
-                  </li>
-                  <li className='common-dropdown__item nav-submenu__item'>
-                    <Link
-                      onClick={() => setActiveIndex(null)}
-                      to='/vendor-details'
-                      className='common-dropdown__link nav-submenu__link hover-bg-neutral-100'
-                    >
-                      Vendor Details
-                    </Link>
-                  </li>
-                  <li className='common-dropdown__item nav-submenu__item'>
-                    <Link
-                      onClick={() => setActiveIndex(null)}
-                      to='/vendor-two'
-                      className='common-dropdown__link nav-submenu__link hover-bg-neutral-100'
-                    >
-                      Vendors Two
-                    </Link>
-                  </li>
-                  <li className='common-dropdown__item nav-submenu__item'>
-                    <Link
-                      onClick={() => setActiveIndex(null)}
-                      to='/vendor-two-details'
-                      className='common-dropdown__link nav-submenu__link hover-bg-neutral-100'
-                    >
-                      Vendors Two Details
-                    </Link>
-                  </li>
-                </ul>
-              </li>
-              <li
-                onClick={() => handleMenuClick(4)}
-                className={`on-hover-item nav-menu__item has-submenu ${
-                  activeIndex === 4 ? "d-block" : ""
-                }`}
-              >
-                <Link to='#' className='nav-menu__link'>
-                  Blog
-                </Link>
-                <ul
-                  className={`on-hover-dropdown common-dropdown nav-submenu scroll-sm ${
-                    activeIndex === 4 ? "open" : ""
-                  }`}
-                >
-                  <li className='common-dropdown__item nav-submenu__item'>
-                    <Link
-                      onClick={() => setActiveIndex(null)}
-                      to='/blog'
-                      className='common-dropdown__link nav-submenu__link hover-bg-neutral-100'
-                    >
-                      {" "}
-                      Blog
-                    </Link>
-                  </li>
-                  <li className='common-dropdown__item nav-submenu__item'>
-                    <Link
-                      onClick={() => setActiveIndex(null)}
-                      to='/blog-details'
-                      className='common-dropdown__link nav-submenu__link hover-bg-neutral-100'
-                    >
-                      {" "}
-                      Blog Details
-                    </Link>
-                  </li>
-                </ul>
-              </li> */}
               <li className='nav-menu__item'>
                 <Link to='/contact' className='nav-menu__link'>
                   Contact Us
@@ -589,7 +370,7 @@ const HeaderThree = () => {
                     <i className='ph ph-magnifying-glass' />
                   </span>
                 </button>
-                <Link
+                {/* <Link
                   to='/signin'
                   className='flex-align flex-column gap-8 item-hover-two'
                 >
@@ -597,52 +378,40 @@ const HeaderThree = () => {
                     <i className='ph ph-user' />
                   </span>
                   <span className='text-md text-white item-hover__text d-none d-lg-flex'>
-                    {/* Profile */}
                     SignIn
                   </span>
-                </Link>
-                {/* <Link
-                  to='#'
-                  className='flex-align flex-column gap-8 item-hover-two'
-                >
-                  <span className='text-2xl text-white d-flex position-relative me-6 mt-6 item-hover__text'>
-                    <i className='ph ph-heart' />
-                    <span className='w-16 h-16 flex-center rounded-circle bg-main-two-600 text-white text-xs position-absolute top-n6 end-n4'>
-                      2
-                    </span>
-                  </span>
-                  <span className='text-md text-white item-hover__text d-none d-lg-flex'>
-                    Wishlist
-                  </span>
                 </Link> */}
-                {/* <Link
-                  to='/cart'
-                  className='flex-align flex-column gap-8 item-hover-two'
-                >
-                  <span className='text-2xl text-white d-flex position-relative me-6 mt-6 item-hover__text'>
-                    <i className='ph-fill ph-shuffle' />
-                    <span className='w-16 h-16 flex-center rounded-circle bg-main-two-600 text-white text-xs position-absolute top-n6 end-n4'>
-                      2
-                    </span>
-                  </span>
-                  <span className='text-md text-white item-hover__text d-none d-lg-flex'>
-                    Compare
-                  </span>
-                </Link> 
-                <Link
-                  to='/cart'
-                  className='flex-align flex-column gap-8 item-hover-two'
-                >
-                  <span className='text-2xl text-white d-flex position-relative me-6 mt-6 item-hover__text'>
-                    <i className='ph ph-shopping-cart-simple' />
-                    <span className='w-16 h-16 flex-center rounded-circle bg-main-two-600 text-white text-xs position-absolute top-n6 end-n4'>
-                      2
-                    </span>
-                  </span>
-                  <span className='text-md text-white item-hover__text d-none d-lg-flex'>
-                    Cart
-                  </span>
-                </Link>*/}
+                {currentUser ? (
+                    <div className="flex-align flex-column gap-8 item-hover-two">
+                      <span className="text-2xl text-white d-flex position-relative item-hover__text">
+                        <i className="ph ph-user-circle" />
+                      </span>
+                      <span className="text-md text-white item-hover__text d-none d-lg-flex">
+                        Welcome, {currentUser.username}
+                      </span>
+                      <button
+                        onClick={handleLogout}
+                        className="bg-transparent border-0 text-white text-md ms-2"
+                        title="Logout"
+                      >
+                        <i className="ph ph-sign-out" />
+                      </button>
+                    </div>
+                  ) : (
+                    <Link
+                      to="/signin"
+                      className="flex-align flex-column gap-8 item-hover-two"
+                    >
+                      <span className="text-2xl text-white d-flex position-relative item-hover__text">
+                        <i className="ph ph-user" />
+                      </span>
+                      <span className="text-md text-white item-hover__text d-none d-lg-flex">
+                        SignIn
+                      </span>
+                    </Link>
+                  )}
+
+                
               </div>
             </div>
             {/* Header Middle Right End  */}
@@ -1326,260 +1095,7 @@ const HeaderThree = () => {
                       Services
                     </NavLink>
                   </li>
-                  {/* <li className='on-hover-item nav-menu__item has-submenu activePage'>
-                    <Link to='#' className='nav-menu__link'>
-                      Home
-                    </Link>
-                    <ul className='on-hover-dropdown common-dropdown nav-submenu scroll-sm'>
-                      <li className='common-dropdown__item nav-submenu__item'>
-                        <NavLink
-                          to='/index'
-                          //   className='common-dropdown__link nav-submenu__link hover-bg-neutral-100'
-                          className={(navData) =>
-                            navData.isActive
-                              ? "common-dropdown__link nav-submenu__link hover-bg-neutral-100 activePage"
-                              : "common-dropdown__link nav-submenu__link hover-bg-neutral-100"
-                          }
-                        >
-                          {" "}
-                          Home Grocery
-                        </NavLink>
-                      </li>
-                      <li className='common-dropdown__item nav-submenu__item'>
-                        <NavLink
-                          to='/index-two'
-                          className={(navData) =>
-                            navData.isActive
-                              ? "common-dropdown__link nav-submenu__link hover-bg-neutral-100 activePage"
-                              : "common-dropdown__link nav-submenu__link hover-bg-neutral-100"
-                          }
-                        >
-                          {" "}
-                          Home Electronics
-                        </NavLink>
-                      </li>
-                      <li className='common-dropdown__item nav-submenu__item '>
-                        <NavLink
-                          to='/index-three'
-                          className={(navData) =>
-                            navData.isActive
-                              ? "common-dropdown__link nav-submenu__link hover-bg-neutral-100 activePage"
-                              : "common-dropdown__link nav-submenu__link hover-bg-neutral-100"
-                          }
-                        >
-                          {" "}
-                          Home Fashion
-                        </NavLink>
-                      </li>
-                    </ul>
-                  </li> */}
-                  {/* <li className='on-hover-item nav-menu__item has-submenu'>
-                    <Link to='#' className='nav-menu__link'>
-                      Shop
-                    </Link>
-                    <ul className='on-hover-dropdown common-dropdown nav-submenu scroll-sm'>
-                      <li className='common-dropdown__item nav-submenu__item'>
-                        <NavLink
-                          to='#'
-                          className={(navData) =>
-                            navData.isActive
-                              ? "common-dropdown__link nav-submenu__link hover-bg-neutral-100 activePage"
-                              : "common-dropdown__link nav-submenu__link hover-bg-neutral-100"
-                          }
-                        >
-                          Shop
-                        </NavLink>
-                      </li>
-                      <li className='common-dropdown__item nav-submenu__item'>
-                        <NavLink
-                          to='/product-details'
-                          className={(navData) =>
-                            navData.isActive
-                              ? "common-dropdown__link nav-submenu__link hover-bg-neutral-100 activePage"
-                              : "common-dropdown__link nav-submenu__link hover-bg-neutral-100"
-                          }
-                        >
-                          {" "}
-                          Shop Details
-                        </NavLink>
-                      </li>
-                      <li className='common-dropdown__item nav-submenu__item'>
-                        <NavLink
-                          to='/product-details-two'
-                          className={(navData) =>
-                            navData.isActive
-                              ? "common-dropdown__link nav-submenu__link hover-bg-neutral-100 activePage"
-                              : "common-dropdown__link nav-submenu__link hover-bg-neutral-100"
-                          }
-                        >
-                          {" "}
-                          Shop Details Two
-                        </NavLink>
-                      </li>
-                    </ul>
-                  </li> */}
-                  {/* <li className='on-hover-item nav-menu__item has-submenu'>
-                    <span className='badge-notification bg-warning-600 text-white text-sm py-2 px-8 rounded-4'>
-                      New
-                    </span>
-                    <Link to='#' className='nav-menu__link'>
-                      Pages
-                    </Link>
-                    <ul className='on-hover-dropdown common-dropdown nav-submenu scroll-sm'>
-                      <li className='common-dropdown__item nav-submenu__item'>
-                        <NavLink
-                          to='/cart'
-                          className={(navData) =>
-                            navData.isActive
-                              ? "common-dropdown__link nav-submenu__link hover-bg-neutral-100 activePage"
-                              : "common-dropdown__link nav-submenu__link hover-bg-neutral-100"
-                          }
-                        >
-                          Cart
-                        </NavLink>
-                      </li>
-                      <li className='common-dropdown__item nav-submenu__item'>
-                        <NavLink
-                          to='/wishlist'
-                          className={(navData) =>
-                            navData.isActive
-                              ? "common-dropdown__link nav-submenu__link hover-bg-neutral-100 activePage"
-                              : "common-dropdown__link nav-submenu__link hover-bg-neutral-100"
-                          }
-                        >
-                          Wishlist
-                        </NavLink>
-                      </li>
-                      <li className='common-dropdown__item nav-submenu__item'>
-                        <NavLink
-                          to='/checkout'
-                          className={(navData) =>
-                            navData.isActive
-                              ? "common-dropdown__link nav-submenu__link hover-bg-neutral-100 activePage"
-                              : "common-dropdown__link nav-submenu__link hover-bg-neutral-100"
-                          }
-                        >
-                          Checkout{" "}
-                        </NavLink>
-                      </li>
-                      <li className='common-dropdown__item nav-submenu__item'>
-                        <NavLink
-                          to='/become-seller'
-                          className={(navData) =>
-                            navData.isActive
-                              ? "common-dropdown__link nav-submenu__link hover-bg-neutral-100 activePage"
-                              : "common-dropdown__link nav-submenu__link hover-bg-neutral-100"
-                          }
-                        >
-                          {" "}
-                          Become Seller
-                        </NavLink>
-                      </li>
-                      <li className='common-dropdown__item nav-submenu__item'>
-                        <NavLink
-                          to='#'
-                          className={(navData) =>
-                            navData.isActive
-                              ? "common-dropdown__link nav-submenu__link hover-bg-neutral-100 activePage"
-                              : "common-dropdown__link nav-submenu__link hover-bg-neutral-100"
-                          }
-                        >
-                          Account
-                        </NavLink>
-                      </li>
-                    </ul>
-                  </li> */}
-                  {/* <li className='on-hover-item nav-menu__item has-submenu'>
-                    <span className='badge-notification bg-tertiary-600 text-white text-sm py-2 px-8 rounded-4'>
-                      New
-                    </span>
-                    <Link to='#' className='nav-menu__link'>
-                      Vendors
-                    </Link>
-                    <ul className='on-hover-dropdown common-dropdown nav-submenu scroll-sm'>
-                      <li className='common-dropdown__item nav-submenu__item'>
-                        <NavLink
-                          to='/vendor'
-                          className={(navData) =>
-                            navData.isActive
-                              ? "common-dropdown__link nav-submenu__link hover-bg-neutral-100 activePage"
-                              : "common-dropdown__link nav-submenu__link hover-bg-neutral-100"
-                          }
-                        >
-                          Vendors{" "}
-                        </NavLink>
-                      </li>
-                      <li className='common-dropdown__item nav-submenu__item'>
-                        <NavLink
-                          to='/vendor-details'
-                          className={(navData) =>
-                            navData.isActive
-                              ? "common-dropdown__link nav-submenu__link hover-bg-neutral-100 activePage"
-                              : "common-dropdown__link nav-submenu__link hover-bg-neutral-100"
-                          }
-                        >
-                          {" "}
-                          Vendor Details{" "}
-                        </NavLink>
-                      </li>
-                      <li className='common-dropdown__item nav-submenu__item'>
-                        <NavLink
-                          to='/vendor-two'
-                          className={(navData) =>
-                            navData.isActive
-                              ? "common-dropdown__link nav-submenu__link hover-bg-neutral-100 activePage"
-                              : "common-dropdown__link nav-submenu__link hover-bg-neutral-100"
-                          }
-                        >
-                          Vendors Two
-                        </NavLink>
-                      </li>
-                      <li className='common-dropdown__item nav-submenu__item'>
-                        <NavLink
-                          to='/vendor-two-details'
-                          className={(navData) =>
-                            navData.isActive
-                              ? "common-dropdown__link nav-submenu__link hover-bg-neutral-100 activePage"
-                              : "common-dropdown__link nav-submenu__link hover-bg-neutral-100"
-                          }
-                        >
-                          Vendors Two Details
-                        </NavLink>
-                      </li>
-                    </ul>
-                  </li> */}
-                  {/* <li className='on-hover-item nav-menu__item has-submenu'>
-                    <Link to='#' className='nav-menu__link'>
-                      Blog
-                    </Link>
-                    <ul className='on-hover-dropdown common-dropdown nav-submenu scroll-sm'>
-                      <li className='common-dropdown__item nav-submenu__item'>
-                        <NavLink
-                          to='/blog'
-                          className={(navData) =>
-                            navData.isActive
-                              ? "common-dropdown__link nav-submenu__link hover-bg-neutral-100 activePage"
-                              : "common-dropdown__link nav-submenu__link hover-bg-neutral-100"
-                          }
-                        >
-                          Blog
-                        </NavLink>
-                      </li>
-                      <li className='common-dropdown__item nav-submenu__item'>
-                        <NavLink
-                          to='/blog-details'
-                          className={(navData) =>
-                            navData.isActive
-                              ? "common-dropdown__link nav-submenu__link hover-bg-neutral-100 activePage"
-                              : "common-dropdown__link nav-submenu__link hover-bg-neutral-100"
-                          }
-                        >
-                          {" "}
-                          Blog Details
-                        </NavLink>
-                      </li>
-                    </ul>
-                  </li> */}
+                  
                   <li className='nav-menu__item'>
                     <NavLink to='/contact' className='nav-menu__link'>
                       Contact Us
@@ -1613,28 +1129,6 @@ const HeaderThree = () => {
                                 </span>
                               </button>
                               
-                              {/* <Link to='/wishlist' className='flex-align gap-4 item-hover'>
-                                <span className='text-2xl text-gray-700 d-flex position-relative me-6 mt-6 item-hover__text'>
-                                  <i className='ph ph-heart' />
-                                  <span className='w-16 h-16 flex-center rounded-circle bg-main-600 text-white text-xs position-absolute top-n6 end-n4'>
-                                    2
-                                  </span>
-                                </span>
-                                <span className='text-md text-gray-500 item-hover__text d-none d-lg-flex'>
-                                  Wishlist
-                                </span>
-                              </Link>
-                              <Link to='/cart' className='flex-align gap-4 item-hover'>
-                                <span className='text-2xl text-gray-700 d-flex position-relative me-6 mt-6 item-hover__text'>
-                                  <i className='ph ph-shopping-cart-simple' />
-                                  <span className='w-16 h-16 flex-center rounded-circle bg-main-600 text-white text-xs position-absolute top-n6 end-n4'>
-                                    2
-                                  </span>
-                                </span>
-                                <span className='text-md text-gray-500 item-hover__text d-none d-lg-flex'>
-                                  Cart
-                                </span>
-                              </Link> */}
                             </div>
                           </div>
                           <button
