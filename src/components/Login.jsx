@@ -12,8 +12,8 @@ import { useNavigate } from "react-router-dom";
 const Login = () => {
   const dispatch = useDispatch();
   const navigate = useNavigate();
-//   const [loading, setLoading] = useState(false);
-//   const [errorMsg, setErrorMsg] = useState("");
+  // const [loading, setLoading] = useState(false);
+  // const [errorMsg, setErrorMsg] = useState("");
 
   const [showPwd, setShowPwd] = useState(false);
   const [error, setError] = useState("");
@@ -118,7 +118,9 @@ const Login = () => {
                 </div>
 
                 {/* Error */}
-                {error && <div className="text-error-red mt-16">{error}</div>}
+                <div className='mb-24 position-relative text-center'>
+                {error && <p className="text-danger m-0">{error}</p>}
+                </div>
 
                 {/* Submit */}
                 <div className="mb-24 mt-48">
