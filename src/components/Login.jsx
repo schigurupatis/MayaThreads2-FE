@@ -130,6 +130,17 @@ const Login = () => {
                 {/* Link to Signup */}
                 <div className="mt-24 text-center">
                   <p className="m-0">
+                    Forgot Your Password?
+                    <Link
+                      to="/signup"
+                      className="text-danger-600 text-sm fw-semibold hover-text-decoration-underline"
+                    >
+                      &nbsp;ReSet Now
+                    </Link>
+                  </p>
+                </div>
+                <div className="mt-24 text-center">
+                  <p className="m-0">
                     Don't have an account?
                     <Link
                       to="/signup"
