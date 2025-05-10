@@ -1153,7 +1153,7 @@ const HeaderThree = () => {
                                   <i className='ph ph-magnifying-glass' />
                                 </span>
                               </button>
-                              <Link
+                              {/* <Link
                                 to='/signin'
                                 className='flex-align flex-column gap-8 item-hover-two'
                               >
@@ -1163,7 +1163,38 @@ const HeaderThree = () => {
                                 <span className='text-md text-white item-hover__text d-none d-lg-flex'>
                                   SignIn
                                 </span>
-                              </Link>
+                              </Link> */}
+                              {currentUser ? (
+                                <div className="flex-align flex-row gap-4 item-hover-two">
+                                  {/* <span className="text-2xl text-black d-flex position-relative item-hover__text">
+                                    <i className="ph ph-user-circle" />
+                                  </span> */}
+                                  {/* <span className="text-md text-black item-hover__text d-none d-lg-flex"> */}
+                                  <span className="text-md text-black item-hover__text d-lg-flex">
+                                    {/* <small>Welcome,</small> <small>{currentUser.username}</small> */}
+                                    <small>Welcome,</small> <small>{currentUser.username.substring(0, 7)}...</small>
+                                  </span>
+                                  <button
+                                    onClick={handleLogout}
+                                    className="bg-transparent border-0 text-black text-md ms-2"
+                                    title="Logout"
+                                  >
+                                    <i className="ph ph-sign-out" />
+                                  </button>
+                                </div>
+                              ) : (
+                                <Link
+                                  to="/signin"
+                                  className="flex-align flex-row gap-4 item-hover-two"
+                                >
+                                  <span className="text-2xl text-black d-flex position-relative item-hover__text">
+                                    <i className="ph ph-user" />
+                                  </span>
+                                  <span className="text-md text-black item-hover__text d-none d-lg-flex">
+                                    SignIn
+                                  </span>
+                                </Link>
+                              )}
                               
                             </div>
                           </div>
