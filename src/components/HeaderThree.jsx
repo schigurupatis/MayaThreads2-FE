@@ -1107,6 +1107,31 @@ const HeaderThree = () => {
               {/* Menu End  */}
             </div>
             {/* Header Right start */}
+            {/* <div className='me-8 d-lg-none d-block'>
+                <div className='header-two-activities flex-align flex-wrap gap-32'>
+                  <button
+                    onClick={handleSearchToggle}
+                    type='button'
+                    className='flex-align search-icon d-lg-none d-flex gap-4 item-hover-two'
+                  >
+                    <span className='text-2xl text-white d-flex position-relative item-hover__text'>
+                      <i className='ph ph-magnifying-glass' />
+                    </span>
+                  </button>
+                  <Link
+                    to='/account'
+                    className='flex-align flex-column gap-8 item-hover-two'
+                  >
+                    <span className='text-2xl text-white d-flex position-relative item-hover__text'>
+                      <i className='ph ph-user' />
+                    </span>
+                    <span className='text-md text-white item-hover__text d-none d-lg-flex'>
+                      Profile
+                    </span>
+                  </Link>
+                  
+                </div>
+              </div> */}
                         <div className='header-right flex-align'>
                           <Link
                             to='/tel:01234567890'
@@ -1128,6 +1153,17 @@ const HeaderThree = () => {
                                   <i className='ph ph-magnifying-glass' />
                                 </span>
                               </button>
+                              <Link
+                                to='/signin'
+                                className='flex-align flex-column gap-8 item-hover-two'
+                              >
+                                <span className='text-2xl text-black d-flex position-relative item-hover__text'>
+                                  <i className='ph ph-user' />
+                                </span>
+                                <span className='text-md text-white item-hover__text d-none d-lg-flex'>
+                                  SignIn
+                                </span>
+                              </Link>
                               
                             </div>
                           </div>

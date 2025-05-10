@@ -386,7 +386,7 @@ const FooterThree = () => {
               MayaThreads © 2025. All Rights Reserved
             </p>
             <div className='flex-align gap-8 flex-wrap '>
-              <span className='text-heading text-sm'>Designed & Developed by <Link to="#" className="text-danger">Santha Kumar Chigurupati</Link></span>
+              <span className='text-heading text-sm'>Designed, Developed & Maintained by <Link to="https://www.linkedin.com/in/schigurupatis/" target="_blank" className="text-danger">Santha Kumar Chigurupati</Link></span>
               {/* <img src='assets/images/thumbs/payment-method.png' alt='' /> */}
             </div>
           </div>
