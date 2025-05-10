@@ -113,7 +113,7 @@ const HeaderThree = () => {
             <input
               type='text'
               className='form-control py-16 px-24 text-xl rounded-pill pe-64'
-              placeholder='Search for a product or brand'
+              placeholder='Search for a Tailer or Shop or Service'
             />
             <button
               type='submit'
@@ -305,7 +305,7 @@ const HeaderThree = () => {
                     <input
                       type='text'
                       className='search-form__input common-input py-13 ps-16 pe-18 rounded-0 border-0'
-                      placeholder='Search for a tailer or shop'
+                      placeholder='Search for a Tailer or Shop or Service'
                     />
                   </div>
                   <button
@@ -382,12 +382,19 @@ const HeaderThree = () => {
                   </span>
                 </Link> */}
                 {currentUser ? (
-                    <div className="flex-align flex-column gap-8 item-hover-two">
+                    <div className="flex-align gap-8 item-hover-two">
                       <span className="text-2xl text-white d-flex position-relative item-hover__text">
                         <i className="ph ph-user-circle" />
                       </span>
                       <span className="text-md text-white item-hover__text d-none d-lg-flex">
-                        Welcome, {currentUser.username}
+                        {/* Welcome, {currentUser.username} */}
+                        <small>Welcome,</small>&nbsp;
+                        <small>
+                          {currentUser.username.length > 15
+                            ? currentUser.username.substring(0, 15) + "..."
+                            : currentUser.username}
+                        </small>
+
                       </span>
                       <button
                         onClick={handleLogout}
