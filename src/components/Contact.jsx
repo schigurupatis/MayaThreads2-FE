@@ -95,7 +95,8 @@ const Contact = () => {
                                             type="submit"
                                             className="btn btn-main py-18 px-32 rounded-8"
                                         >
-                                            Get a Quote
+                                            {/* Get a Quote */}
+                                            Contact Now
                                         </button>
                                     </div>
                                 </div>
