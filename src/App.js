@@ -24,6 +24,7 @@ import ServicesPage from "./pages/ServicesPage";
 import ShopsPage from "./pages/ShopsPage";
 import SignInPage from "./pages/SignInPage";
 import SignUpPage from "./pages/SignUpPage";
+import BookNowPage from "./pages/BookNowPage";
 
 import { Provider } from "react-redux"
 import appStore from "./utils/appStore"
@@ -46,6 +47,7 @@ function App() {
         <Route exact path='/shops' element={<ShopsPage />} />
         <Route exact path='/signin' element={<SignInPage />} />
         <Route exact path='/signup' element={<SignUpPage />} />
+        <Route exact path='/booknow' element={<BookNowPage />} />
         <Route
           exact
           path='/product-details'

@@ -113,7 +113,7 @@ const HeaderThree = () => {
             <input
               type='text'
               className='form-control py-16 px-24 text-xl rounded-pill pe-64'
-              placeholder='Search for a Tailer or Shop or Service'
+              placeholder='Search for a Service or Tailer or Shop'
             />
             <button
               type='submit'
@@ -305,7 +305,7 @@ const HeaderThree = () => {
                     <input
                       type='text'
                       className='search-form__input common-input py-13 ps-16 pe-18 rounded-0 border-0'
-                      placeholder='Search for a Tailer or Shop or Service'
+                      placeholder='Search for a Service or Tailer or Shop'
                     />
                   </div>
                   <button
@@ -370,6 +370,17 @@ const HeaderThree = () => {
                     <i className='ph ph-magnifying-glass' />
                   </span>
                 </button>
+                <Link
+                  to='/booknow'
+                  className='flex-align flex-column gap-8 item-hover-two'
+                >
+                  <span className='text-2xl text-white d-flex position-relative item-hover__text'>
+                    <i class="ph ph-headset"></i>
+                  </span>
+                  <span className='text-md text-white item-hover__text d-none d-lg-flex'>
+                    Book Now
+                  </span>
+                </Link>
                 {/* <Link
                   to='/signin'
                   className='flex-align flex-column gap-8 item-hover-two'
@@ -1160,6 +1171,17 @@ const HeaderThree = () => {
                                   <i className='ph ph-magnifying-glass' />
                                 </span>
                               </button>
+                              <Link
+                                to='/booknow'
+                                className='flex-align flex-column gap-8 item-hover-two'
+                              >
+                                <span className='text-2xl text-black d-flex position-relative item-hover__text'>
+                                  <i class="ph ph-headset"></i>
+                                </span>
+                                <span className='text-md text-black item-hover__text d-none d-lg-flex'>
+                                  Book Now
+                                </span>
+                              </Link>
                               {/* <Link
                                 to='/signin'
                                 className='flex-align flex-column gap-8 item-hover-two'
