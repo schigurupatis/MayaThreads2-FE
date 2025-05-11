@@ -68,7 +68,7 @@ const BookNow = () => {
           setShowToast(true);
           setTimeout(() => {
             setShowToast(false);
-            navigate("/");
+            //navigate("/");
           }, 3000);
         } catch (err) {
           setError(err?.response?.data || "Something went wrong");
