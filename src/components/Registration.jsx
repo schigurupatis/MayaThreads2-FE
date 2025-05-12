@@ -173,7 +173,7 @@ const Registration = () => {
                 </div>
 
                 {/* Submit */}
-                <div className="mt-48">
+                <div className="mb-24 mt-30">
                   <button type="submit" className="btn btn-main py-18 px-40 w-100">
                     Register
                   </button>

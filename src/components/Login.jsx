@@ -129,8 +129,30 @@ const Login = () => {
                   </button>
                 </div>
 
+                <div className='d-flex justify-content-between align-items-center mb-24 position-relative'>
+                  <p className="m-0">
+                    Forgot Password?
+                  <Link
+                      to="/signup"
+                      className="text-danger-600 text-sm fw-semibold hover-text-decoration-underline"
+                    >
+                      &nbsp;ReSet
+                    </Link>
+                  </p>
+                  <p className="m-0">
+                    New User
+                    <Link
+                      to="/signup"
+                      className="text-danger-600 text-sm fw-semibold hover-text-decoration-underline"
+                    >
+                      &nbsp;SignUp
+                    </Link>
+                    </p>
+                  </div>
+
+
                 {/* Link to Signup */}
-                <div className="mt-24 text-center">
+                {/* <div className="mt-24 text-center">
                   <p className="m-0">
                     Forgot Your Password?
                     <Link
@@ -151,7 +173,7 @@ const Login = () => {
                       &nbsp;SignUp Now
                     </Link>
                   </p>
-                </div>
+                </div> */}
               </div>
             </div>
           </div>

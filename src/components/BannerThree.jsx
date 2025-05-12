@@ -119,13 +119,14 @@ const BannerThree = () => {
                       help you.
                     </p>
                     <Link
-                      to='#'
+                      to='/services'
                       className='btn btn-outline-white d-inline-flex align-items-center rounded-pill gap-8 mt-lg-4 mt-sm-1 wow bounceIn'
                       tabIndex={0}
                     >
-                      Shop Now
+                      Explore Now
                       <span className='icon text-xl d-flex'>
-                        <i className='ph ph-shopping-cart-simple' />
+                        {/* <i className='ph ph-shopping-cart-simple' /> */}
+                        <i class="ph ph-storefront"></i>
                       </span>
                     </Link>
                   </div>
