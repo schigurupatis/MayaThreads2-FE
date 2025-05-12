@@ -68,7 +68,7 @@ const Registration = () => {
           setTimeout(() => {
             setShowToast(false);
             // navigate("/signin");
-          }, 30000);
+          }, 300000);
         } catch (err) {
           setError(err?.response?.data || "Something went wrong");
         }
@@ -191,7 +191,7 @@ const Registration = () => {
               <div className="toast-body">
                 User Registered successfully.
               </div>
-              {/* <button type="button" class="btn-close me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button> */}
+              <button type="button" class="btn-close me-2 m-auto pe-2 text-white" data-bs-dismiss="toast" aria-label="Close"></button>
             </div>
           </div>
           // <div className="toast toast-top toast-center show">

@@ -159,9 +159,17 @@ const Login = () => {
 
         {/* Toast */}
         {showToast && (
-          <div className="toast toast-top toast-center">
-            <div className="alert alert-success">
-              <span className="text-white">Logged in successfully.</span>
+          // <div className="toast toast-top toast-center">
+          //   <div className="alert alert-success">
+          //     <span className="text-white">Logged in successfully.</span>
+          //   </div>
+          // </div>
+          <div className="toast mx-auto mt-20 show text-bg-success" role="alert" aria-live="assertive" aria-atomic="true">
+            <div className="d-flex justify-content-center align-items-center">
+              <div className="toast-body">
+                You have LoggedIn successfully.
+              </div>
+              <button type="button" class="btn-close me-2 m-auto pe-2 text-white" data-bs-dismiss="toast" aria-label="Close"></button>
             </div>
           </div>
         )}
