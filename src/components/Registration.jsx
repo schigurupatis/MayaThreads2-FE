@@ -67,8 +67,8 @@ const Registration = () => {
           setShowToast(true);
           setTimeout(() => {
             setShowToast(false);
-            navigate("/signin");
-          }, 3000);
+            // navigate("/signin");
+          }, 30000);
         } catch (err) {
           setError(err?.response?.data || "Something went wrong");
         }
@@ -81,7 +81,7 @@ const Registration = () => {
       <div className="container container-lg">
         <form onSubmit={formik.handleSubmit}>
           <div className="row gy-4">
-            <div className="col-xl-4 pe-xl-5 mx-auto">
+            <div className="col-xl-4 mx-auto">
               <div className="border border-gray-100 hover-border-main-600 transition-1 rounded-16 px-24 py-40">
                 <h6 className="text-xl mb-32">Register</h6>
 
@@ -186,11 +186,19 @@ const Registration = () => {
 
         {/* Toast */}
         {showToast && (
-          <div className="toast toast-top toast-center">
-            <div className="alert alert-success">
-              <span className="text-white">Registered successfully.</span>
+          <div className="toast mx-auto mt-20 show text-bg-success" role="alert" aria-live="assertive" aria-atomic="true">
+            <div className="d-flex justify-content-center align-items-center">
+              <div className="toast-body">
+                User Registered successfully.
+              </div>
+              {/* <button type="button" class="btn-close me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button> */}
             </div>
           </div>
+          // <div className="toast toast-top toast-center show">
+          //   <div className="alert alert-success text-success m-0">
+          //     <span className="">Registered successfully.</span>
+          //   </div>
+          // </div>
         )}
       </div>
       <style>
