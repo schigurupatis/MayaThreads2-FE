@@ -55,7 +55,7 @@ const Login = () => {
         setTimeout(() => {
           setShowToast(false);
           navigate("/");
-        }, 2000);
+        }, 3000);
       } catch (err) {
         setError(err?.response?.data || "Login failed. Please check your credentials.");
       }
@@ -169,7 +169,7 @@ const Login = () => {
               <div className="toast-body">
                 You have LoggedIn successfully.
               </div>
-              <button type="button" class="btn-close me-2 m-auto pe-2 text-white" data-bs-dismiss="toast" aria-label="Close"></button>
+              <button type="button" class="btn-close me-2 m-auto pe-20 text-white" data-bs-dismiss="toast" aria-label="Close"></button>
             </div>
           </div>
         )}

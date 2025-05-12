@@ -68,9 +68,17 @@ const Registration = () => {
           setTimeout(() => {
             setShowToast(false);
             // navigate("/signin");
-          }, 300000);
+          }, 3000);
         } catch (err) {
-          setError(err?.response?.data || "Something went wrong");
+          // setError(err?.response?.data || "Something went wrong");
+          const msg = err?.response?.data || "Something went wrong";
+          setError(msg);
+          // Redirect to login if already registered
+          if (msg.includes("already registered")) {
+            setTimeout(() => {
+              navigate("/signin");
+            }, 4000);
+          }
         }
       }
       
@@ -159,8 +167,10 @@ const Registration = () => {
                   )}
                 </div>
 
-                {/* Error Message */}
-                {error && <div className="mt-48 text-error-red">{error}</div>}
+                {/* Error */}
+                <div className='mb-24 position-relative text-center'>
+                {error && <p className="text-danger m-0">{error}</p>}
+                </div>
 
                 {/* Submit */}
                 <div className="mt-48">
@@ -189,9 +199,9 @@ const Registration = () => {
           <div className="toast mx-auto mt-20 show text-bg-success" role="alert" aria-live="assertive" aria-atomic="true">
             <div className="d-flex justify-content-center align-items-center">
               <div className="toast-body">
-                User Registered successfully.
+                You have Registered successfully.
               </div>
-              <button type="button" class="btn-close me-2 m-auto pe-2 text-white" data-bs-dismiss="toast" aria-label="Close"></button>
+              <button type="button" class="btn-close me-2 m-auto pe-20 text-white" data-bs-dismiss="toast" aria-label="Close"></button>
             </div>
           </div>
           // <div className="toast toast-top toast-center show">
